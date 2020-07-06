@@ -1,0 +1,125 @@
+
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+header {
+  text-align: center;
+}
+
+#simpl-title {
+  font-family: helvetica, arial, sans-serif;
+  background: -webkit-linear-gradient(#196ef7, #0050ff);
+  background: linear-gradient(#196ef7, #0050ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+#edit {
+  display: block;
+  background: linear-gradient(#F9EFAF, #F7E98D);
+  width: 400px;
+  height: 400px;
+  padding: 1em;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 12px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+
+footer a {color: white; font-weight: bold;text-decoration: none;}
+footer a:hover {
+  background: -webkit-linear-gradient(#196ef7, #34d8eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  
+}
+
+button {
+  background: -webkit-linear-gradient(#196ef7, #0050ff);
+  border: none;
+  padding: 1em;
+  color: white;
+}
+
+
+.fa-heart {
+  background: -webkit-linear-gradient(#F00000, #eb6a5e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  background: rgba(0,0,0,0.4);
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#fontsizeinput {
+  margin-top: 1em
+}
+
+@media only screen and (min-width: 600px) {
+  .column {
+  float: left;
+  width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #settings {
+    margin-top: 2em;
+    margin-bottom: 5em;
+  }
+  #fontsizeinput p {
+    text-align: center;
+  }
+  #thedownloader, #fontSize {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
